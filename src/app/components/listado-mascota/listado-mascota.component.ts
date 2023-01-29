@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Mascota } from '../../interfaces/mascota';
 
@@ -28,12 +29,16 @@ export class ListadoMascotaComponent implements OnInit, AfterViewInit {
   displayedColumns: string[] = ['nombre', 'edad', 'raza', 'color', 'peso'];
   dataSource = new MatTableDataSource<Mascota>(listMascotas);  // <-- Data source according to the table
 
+  //paginacion
   @ViewChild(MatPaginator) paginator!: MatPaginator;
+  //filtro de ordenamiento
+  @ViewChild(MatSort) sort!: MatSort;
 
   constructor() { }
 
   ngAfterViewInit(): void {
     this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
     //cambiar el lenguage de la paginacion
     this.paginator._intl.itemsPerPageLabel = 'Items por pagina';
   }
