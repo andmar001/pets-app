@@ -7,6 +7,8 @@ import { AgregarEditarMascotaComponent } from './components/agregar-editar-masco
 import { ListadoMascotaComponent } from './components/listado-mascota/listado-mascota.component';
 import { VerMascotasComponent } from './components/ver-mascotas/ver-mascotas.component';
 
+import { MaterialModule } from './material/material.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { VerMascotasComponent } from './components/ver-mascotas/ver-mascotas.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
