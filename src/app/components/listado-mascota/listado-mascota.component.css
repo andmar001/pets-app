@@ -40,4 +40,35 @@ table {
   font-size: 20px;
 }
 
+.search{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 10px;
+}
 
+.busqueda{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.busqueda h1{
+  font-size: 30px;
+}
+
+
+/* input style */
+.mat-form-field{
+  font-size: 15px;
+  width: 70%;
+  background-color: rgb(4, 2, 23);
+  padding: 0;
+  border-radius: 10px;
+}
+
+.mat-form-field input{
+  text-align: center;
+  color: azure;
+  font-size: 30px;
+}
