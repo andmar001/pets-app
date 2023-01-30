@@ -72,3 +72,28 @@ table {
   color: azure;
   font-size: 30px;
 }
+
+.delete{
+  cursor: pointer;
+  color: #e15635;
+}
+
+.edit{
+  cursor: pointer;
+  color: #1878B0;
+}
+
+.search{
+  cursor: pointer;
+}
+
+.iconos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.agregar{
+  font-size: 10px;
+  line-height: 28px;
+}
