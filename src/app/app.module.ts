@@ -8,13 +8,15 @@ import { ListadoMascotaComponent } from './components/listado-mascota/listado-ma
 import { VerMascotasComponent } from './components/ver-mascotas/ver-mascotas.component';
 
 import { MaterialModule } from './material/material.module';
+import { SpinnerComponent } from './shared/spinner/spinner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AgregarEditarMascotaComponent,
     ListadoMascotaComponent,
-    VerMascotasComponent
+    VerMascotasComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,

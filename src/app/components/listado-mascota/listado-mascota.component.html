@@ -55,7 +55,7 @@
         <div class="iconos">
           <mat-icon [routerLink]="['/ver-mascota/7']" matTooltip="ver" class="search">search</mat-icon>
           <mat-icon [routerLink]="['/editar-mascota/7']" matTooltip="editar" class="edit">edit</mat-icon>
-          <mat-icon matTooltip="eliminar" class="delete">delete</mat-icon>
+          <mat-icon (click)="eliminarMascota()" matTooltip="eliminar" class="delete">delete</mat-icon>
         </div>
       </td>
     </ng-container>
