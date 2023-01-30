@@ -2,5 +2,18 @@
 
 html, body { height: 100%; }
 
-body{
+.title {
+  padding: 30px;
+  background: -webkit-linear-gradient(left, #292376, #6adefe);
+  text-align: center;
+  color: white;
 }
+
+.title h1 {
+  font-size: 40px;
+}
+
+.container{
+  margin: 0 10%;
+}
+
